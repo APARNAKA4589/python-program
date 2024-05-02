@@ -17,10 +17,10 @@ def calculateage():
 
 
 
-    Label(text="Name",font=23).place(x=200,y=250)
-    Label(text="Year",font=23).place(x=200,y=300)
-    Label(text="Month",font=23).place(x=200,y=350)
-    Label(text="Day",font=23).place(x=200,y=400)
+Label(text="Name",font=23).place(x=200,y=250)
+Label(text="Year",font=23).place(x=200,y=300)
+Label(text="Month",font=23).place(x=200,y=350)
+Label(text="Day",font=23).place(x=200,y=400)
 
 
 nameValue=StringVar()
@@ -31,11 +31,11 @@ dayValue=StringVar()
 
 nameEntry=Entry(root,textvariable=nameValue,width=30,bd=3,font=20)
 nameEntry.place(x=300,y=250)
-yearEntry=Entry(root,textvariable=nameValue,width=30,bd=3,font=20)
+yearEntry=Entry(root,textvariable=yearValue,width=30,bd=3,font=20)
 yearEntry.place(x=300,y=300)
-monthEntry=Entry(root,textvariable=nameValue,width=30,bd=3,font=20)
+monthEntry=Entry(root,textvariable=monthValue,width=30,bd=3,font=20)
 monthEntry.place(x=300,y=350)
-dayEntry=Entry(root,textvariable=nameValue,width=30,bd=3,font=20)
+dayEntry=Entry(root,textvariable=dayValue,width=30,bd=3,font=20)
 dayEntry.place(x=300,y=400)
 
 Button(text="Calculate Age",font=20,bg="black",fg="white",width=11,height=2,command=calculateage).place(x=300,y=450)
